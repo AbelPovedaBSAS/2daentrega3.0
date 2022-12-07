@@ -1,0 +1,395 @@
+/* para todos los elementos iguales de la pagina*/
+
+/* con * reseteo universal*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    border-radius: 20px;
+    }
+a {
+  text-decoration: none;  
+}
+ul {
+    list-style-type: none;
+}
+span{
+	color: #ab4493; 
+}
+h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #000000;
+}
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+/* para todas las clases iguales de la pagina*/
+/* header*/
+header {
+    justify-content:space-around;
+    }
+.encabezado {
+    background-image: url(../img/header\ ej.jpg);
+    background-repeat:100%;
+    background-size: 100%;
+    background-color: #94e45f;
+    padding: 30px 20px;
+    /* height altura - width ancho*/
+    height: 100%;
+    width: auto;   
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    /* flex-flow:  row nowrap;  tiene las dos propiedades*/
+    justify-content:center;
+    /* Eje secundario*/
+    align-items:baseline
+    /* align-content: flex-start;*/
+            
+    }
+
+.navbar {
+/* display: flex es organizar las ET dentro de un padre con varios hijos*/
+display: flex
+
+
+
+}
+.encabezado-titulo-principal {
+    color: rgb(253, 252, 252);
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5px solid none;
+    align-self:flex-start;
+    align-self:center;
+    align-items:flex-start;
+}
+.encabezado-nav {
+color: white;
+font-weight: bold;
+border: 5px solid none;
+}
+/* main*/
+.main {
+    background-color: rgb(22, 12, 170);
+    background-image: url(../img/fondo\ para\ main\ ej.jpg);
+    /*background-repeat: no-repeat; */
+    background-size: contain;
+    padding: 30px 20px 20px 20px;
+    height: auto;
+    width: auto;
+    border: 10px solid rgb(255, 255, 255);
+    }
+    .main-section1-subtitulo {
+        /* personalizar fuente */
+        color: rgb(207, 40, 40);
+        font-size: 40px;
+        padding: 20px 20px 20px 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;  
+        
+        border-top: blue solid 5px;
+        border-left: blue solid 5px;
+        border-right: blue solid 5px;
+
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .main-section1 {
+    font-size: 20px;
+/* display: flex se usa para los contendores de et*para los padres*/
+    display: flex;
+/* flex-direction: row es para fila  u colum es al costado*/
+    flex-direction:row;
+    justify-content:space-around;
+    padding: 50px;
+    border-bottom: blue 5px solid;
+    border-left: blue solid 5px;
+    border-right: blue solid 5px;
+    }
+    .main-section1-img {
+    height: 200px;
+    width: 200px;
+    }
+.main-section1-video {
+    height: 300px;
+    width: 400px;
+    }
+.main-cajas{
+    background-color: rgb(253, 253, 253, 0);
+    height: auto;
+    width: auto;
+    border: 5px black;
+/* display cambia el ordenamiento a las et */
+    display: flex;
+/* con flex-flow se puede modificar la direccion sobre el eje primario y secundario*/
+/* colum=horizontal y row=vertical
+    wrap para el manejo del desbordamiento*/
+    flex-flow:row;
+/* posisionamiento del eje principal */
+    justify-content: space-evenly;
+/* posisionamiento del eje secundario */
+    align-items:center;
+/* alinear todos los elementos hijos */
+    align-content:center;
+}
+.main-cajas-div {
+    background-color: indianred;
+    border: 4px solid rgb(0, 0, 0);
+/* personalizar fuente de la caja*/
+    color: white;
+    font-size: 30px;
+    padding: 20px 20px 20px 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+.main-cajas-span {
+    background-color: rgb(92, 205, 111);
+    border: 4px solid rgb(0, 0, 0);
+    /* personalizar fuente*/
+    color: white;
+    font-size: 30px;
+    padding: 20px 20px 20px 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.galeria{
+    padding: 20px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.galeria img {
+    border-radius: 20%;
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+/* responsive*/ 
+
+}
+/* article */
+.hero1 {
+    background-image: linear-gradient(to left, rgb(238, 125, 210), rgb(105, 236, 105));
+    border-radius: 10px;
+    /* border-radius es para redondear */ 
+    padding: 20px 20px 20px 20px;
+    /*padding-top es la parte de arriba button es la parte de abajo 
+    left iz y right derecha
+    se puede usar padding solo usando espacios como un reloj empezando por arriba*/
+    border: 5px solid black; 
+    margin: 50px;
+    width: 400px;
+    height: 600px;
+    /* personalizar fuente*/
+    color: black;
+    font-size: 30px;
+        }
+    .hero1-enlace {
+        background-color: rgb(255, 127, 212);
+        display: inline-block 200px;
+    }
+    .hero2-enlace {
+        background-color: rgb(127, 255, 144);
+        display: inline-block 200px;
+    }
+    .hero-img {
+        width: 300px;
+        height: 300px;
+    }
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3,fr);
+}
+
+.tarjeta1 {
+background-image: linear-gradient(to right, red, blue);
+border-radius: 10px;
+/* border-radius es para redondear */ 
+padding: 20px 20px 20px 20px;
+/*padding-top es la parte de arriba button es la parte de abajo 
+left iz y right derecha
+se puede usar padding solo usando espacios como un reloj empezando por arriba*/
+border: 5px solid black; 
+margin: 50px;
+width: 100;
+height: 200;
+/* personalizar fuente*/
+color: black;
+font-size: 30px;
+}
+
+.tarjeta1-enlace {
+    background-color: rgb(127, 255, 144);
+    display: inline-block 200px;
+    width: 400px;
+    text-align: center;
+    border-radius: 15px;
+    color:#ab4493;
+    padding: 15px;
+}
+.tarjeta-titulo {
+    margin-bottom: 20px;
+    font-size: 50px;
+    padding: 80px;
+    position:relative;
+    
+}
+.tarjeta-img {
+    width: 300px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* footer*/
+.footer {
+    justify-content:space-between
+}
+footer {
+    background-color: black;
+    color: white;
+    display: flex
+    
+            }
+.footer-titulo-pie-de-pagina {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+
+}
+.whatsapp {
+    width: 80px;
+    height: 50px; 
+/* position fixed = fijo el elemento,sticky queda pegado con una et */
+    position:fixed;
+    bottom: 10px ;
+    top: 100px;
+    right: 50px;
+    
+}
+/* contactenos*/
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color:   #4446ab; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color:  #4446ab; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+label{
+  display: block; 
+	float: center; 	
+}
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #4446ab; 
+	border-color:  #4446ab; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+button p{
+	color: #fff; 
+}
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+/* simpre al final los media queries, arrancamos por grande
+ y lo llevamos a chico,
+ las medidas que se usa es max-width*/
+@media (max-width: 900px) {
+
+}
+
+ @media only screen and (max-width:768px){
+
+ }
+
+ @media (max-width:576px){
+/* estilos generales*/
+
+/* header*/
+.header {
+    flex-direction: column;
+}
+ 
+/* main */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+main img {
+    display: flex;
+    flex-direction: column;
+}
+.galeria {
+    display: flex;
+   flex-direction:column;
+}
+.contact_form {
+    flex-direction: column;
+}
+ }
+
+
